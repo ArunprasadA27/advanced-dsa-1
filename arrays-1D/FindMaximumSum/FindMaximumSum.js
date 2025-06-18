@@ -43,8 +43,21 @@ function FindMaximumSum_BF2(A) {
 
 // console.log('Brute Force - 2 ', FindMaximumSum_BF2([1, 2, -1, 3]));
 // --------------------------------------------------------------------------------------------------------------------------------------------------
-/* 3. Brute Force 2
---------------------
+/* 3. Expected Solution - Kadane's Algorithm
+---------------------------------------------
     I/P => A = [1, 2, -1, 3]
     O/P => 5
+    T.C     => O(N)
+    S.C     => O(1)
 */
+function FindMaximumSum_Kadane(A){
+    let currSum = 0;
+    let maxSum = Number.NEGATIVE_INFINITY;
+    for(let i=0; i<A.length; i++){
+        currSum = Math.max(A[i], currSum + A[i]);
+        maxSum = Math.max(currSum, maxSum);
+    }
+    return maxSum;
+}
+
+console.log('Kadane Algorithm Max Sum of a contigous subarray - ', FindMaximumSum_Kadane([1, 2, -1, 3]));
