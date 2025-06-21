@@ -7,7 +7,7 @@ For ith devotee B[i][0] = L, B[i][1] = R, B[i][2] = P, given by the 2D array B
 
 ## Run below to see output
 
-node arrays-1D/Q2.ContinuousSumQuery/Solution.js
+node 01.Arrays-1D/Q2.ContinuousSumQuery/Solution.js
 
 ## Problem Constraints
 

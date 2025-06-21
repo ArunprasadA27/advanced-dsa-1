@@ -5,7 +5,7 @@ In other words, among all possible subarrays of A, determine the one that yields
 
 ## Run below to see output
 
-node arrays-1D/Q1.FindMaximumSum/Solution.js
+node 01.Arrays-1D/Q1.FindMaximumSum/Solution.js
 
 ## Problem Constraints
 
